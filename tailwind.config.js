@@ -9,6 +9,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    lineHeight: {
+      none: 0,
+    },
     extend: {},
   },
   plugins: [],

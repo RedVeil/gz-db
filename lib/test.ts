@@ -85,9 +85,9 @@ No., ID Number, Name, Sex, age
 83, 445019151, Elaf Hussein Ahmed Al-Astal, female, 2
 84, 445121775, Marwa Hamza Nasser Al-Astal, female, 1
 85, 444334304, Janan Hamed Nasser Al-Astal, female, 1
-86, 444646855, Rayan Abdullah Zakaria Al-Astal, male, <1 yr
-87, 444351654, Mian Yahya Yusuf Al-Astal, female, <1 yr
-88, 444641492, Salam Wael Ahmed Al-Astal, male, <1 yr
+86, 444646855, Rayan Abdullah Zakaria Al-Astal, male, 0
+87, 444351654, Mian Yahya Yusuf Al-Astal, female, 0
+88, 444641492, Salam Wael Ahmed Al-Astal, male, 0
 89, 930974019, Najia Abdel Ismail Hassouna, female, 86
 90, 930920442, Nima Ahmed Ahmed Hassouna, female, 71
 91, 907876957, Subha Ibrahim Mustafa Hassouna, female, 67
@@ -200,7 +200,6 @@ No., ID Number, Name, Sex, age
 198, 427135462, Shahid Muhammad Hussein Al-Najjar, female, 14
 199, 429037724, Omar Muhammad Fahmy Al-Najjar, male, 14
 200, 426457511, Yazan Suleiman Salman Al-Najjar, male, 14
-201, 426457511, Yazan Suleiman Salman Al-Najjar, male, 14
 202, 429662976, Hikmat Fahd Musa Al-Najjar, female, 13
 203, 430249227, Abdul Rahman Muhammad Fahmy Al-Najjar, male, 13
 204, 430417915, Waaed Muhammad Hussein Al-Najjar, female, 12
@@ -226,7 +225,7 @@ No., ID Number, Name, Sex, age
 224, 444365969, Juri Ayed Ismail Al-Najjar, female, 1
 225, 445165475, Mihraman Suleiman Moin Al-Najjar, female, 1
 226, 445691199, Aya Ahmed Nawaf Al-Najjar, female, 1
-227, 444194104, Zein al-Din Suleiman Moin al-Najjar, male, <1 yr
+227, 444194104, Zein al-Din Suleiman Moin al-Najjar, male, 0
 228, 410603211, Jamil Hafez Hassan Al-Masry, male, 74
 229, 975869645, Abdel Razzaq Hamed Eid Al-Masry, male, 72
 230, 918000845, Malak Mahmoud Ibrahim Al-Masry, female, 71
@@ -286,8 +285,8 @@ No., ID Number, Name, Sex, age
 284, 444943336, Hanzada Ahmed Mahmoud Al-Masry, female, 3
 285, 445433667, Sham Muhammad Abdel Nasser Al-Masry, female, 2
 286, 445866163, Ayman Ahmed Ramadan Al-Masry, male, 1
-287, 445899552, Yasmine Ramez Abdel Razzaq El Masry, female, <1 yr
-288, 445362577, Maria Yasser Kamal Al-Masry, female, <1 yr
+287, 445899552, Yasmine Ramez Abdel Razzaq El Masry, female, 0
+288, 445362577, Maria Yasser Kamal Al-Masry, female, 0
 289, 909431942, Ahmed Ismail Muhammad Al-Kurd, male, 73
 290, 901985846, Fatima Ahmed Muhammad Al-Kurd, female, 63
 291, 924421134, Samir Rajab Muhammad Al-Kurd, male, 60
@@ -379,8 +378,8 @@ No., ID Number, Name, Sex, age
 377, 437052814, Roaa Murad Walid Shaheen, female, 7
 378, 437391725, Rahaf Rami Sadiq Shaheen, female, 7
 379, 438998726, Shaheen Murad Walid Shaheen, male, 6
-380, 444132039, Aisha Jihad Jalal Shaheen, female, <1 yr
-381, 804654888, Son of Rahima Saadi Muhammad Shaheen, male, <1 yr
+380, 444132039, Aisha Jihad Jalal Shaheen, female, 0
+381, 804654888, Son of Rahima Saadi Muhammad Shaheen, male, 0
 382, 903675627, Marzouqa Freej Suleiman Abu Jazar, female, 92
 383, 909373045, Jomah Sarhan Khalil Abu Jazar, male, 68
 384, 918496084, Musa Hamdan Muhammad Abu Jazar, male, 60
@@ -421,8 +420,8 @@ No., ID Number, Name, Sex, age
 419, 440878239, Abdel Salam Mahmoud Jumah Abu Jazar, male, 4
 420, 445065170, Sham Rabie Jumah Abu Jazar, female, 3
 421, 445547342, Omar Hassan Abu Jazar sang, female, 2
-422, 444484786, Muhammad Mamdouh Muhammad Abu Jazar, male, <1 yr
-423, 444484778, Tia Mamdouh Muhammad Abu Jazar, female, <1 yr
+422, 444484786, Muhammad Mamdouh Muhammad Abu Jazar, male, 0
+423, 444484778, Tia Mamdouh Muhammad Abu Jazar, female, 0
 424, 921805610, Amin Saeed Muhammad Musa, male, 81
 425, 410140180, Hiyam Mahmoud Abdel Rahman Musa, female, 65
 426, 922037155, Samir Salamah Ali Musa, male, 64
@@ -462,8 +461,8 @@ No., ID Number, Name, Sex, age
 460, 445086473, Faryal Muhammad Ahmed Musa, female, 2
 461, 445158611, Diamond Ayman Samir Moussa, female, 1
 462, 444207401, Youssef Ahmed Jamal Musa, male, 1
-463, 444200646, Bahaa Mustafa Jamal Musa, male, <1 yr
-464, 444094551, Rakan Hossam Hussein Musa, male, <1 yr
+463, 444200646, Bahaa Mustafa Jamal Musa, male, 0
+464, 444094551, Rakan Hossam Hussein Musa, male, 0
 465, 906867148, Jihad Muhammad Hussein Al-Kahlot, male, 73
 466, 975937780, Suhail Hassan Ahmed Al-Kahlot, male, 65
 467, 975937988, Ghada Abdel Rahman Younis Al-Kahlot, female, 55
@@ -572,7 +571,7 @@ No., ID Number, Name, Sex, age
 570, 442293197, Samira Muhammad Omar Hegazy, female, 3
 571, 445171333, Ezz Abdel Aziz Ezz Hegazy, male, 1
 572, 444336002, Mena Allah Mahmoud Nayef Abu Shammala, female, 1
-573, 444788665, Musk Mahmoud Ibrahim Hegazy, female, <1 yr
+573, 444788665, Musk Mahmoud Ibrahim Hegazy, female, 0
 574, 937061562, Saber Ahmed Muhammad Al-Nabahin, male, 67
 575, 944335330, Arif Ahmed Salem Al-Nabahin, male, 65
 576, 970021085, Intisar Abdul Latif Muhammad Al-Nabahin, female, 62
@@ -611,8 +610,6 @@ No., ID Number, Name, Sex, age
 609, 803597558, Jihad Ibrahim Suleiman Al-Nabahin, male, 31
 610, 804310191, Maysra Amin Muhammad Nofal, male, 29
 611, 400196077, Ibrahim Hisham Ratib Nofal, male, 29
-
-15
 612, 400081071, Mahmoud Khamis Hamouda Al-Dalu, male, 29
 613, 400978607, Reham Omran Saleh Al-Dalu, female, 28
 614, 400765251, Dalia Khaled Mohammed Al-Nabahin, female, 28
@@ -675,8 +672,8 @@ No., ID Number, Name, Sex, age
 671, 445201734, Maryam Tamer Fathi Al-Nabahin, female, 2
 672, 444466833, Mayas Moaz Amin Nofal, female, 1
 673, 444209654, Fatima Moatasem Amin Nofal, female, 1
-674, 444708390, Ahmed Mohamed Amin Nofal, male, <1 yr
-675, 804655016, Son of Nabila Nasr Muhammad Nofal, male, <1 yr
+674, 444708390, Ahmed Mohamed Amin Nofal, male, 0
+675, 804655016, Son of Nabila Nasr Muhammad Nofal, male, 0
 676, 914201975, Saadi Hafez Al-Malahi Qishta, male, 65
 677, 914215744, Khadra Ragheb Malhi cream, female, 65
 678, 900773086, Faisal Mohsen Muhammad Qashta, male, 46
@@ -739,9 +736,9 @@ No., ID Number, Name, Sex, age
 735, 438372401, Hala Bilal Nabil Al-Aidi, female, 6
 736, 442311742, Rabab Mahmoud Nafez Al-Aidi, female, 4
 737, 441225257, Amir Shadi Atallah Al-Aidi, male, 4
-738, 444460950, Moaz Hani Muhammad Al-Aidi, male, <1 yr
-739, 444095517, Qais Ali Nabil Al-Aidi, male, <1 yr
-740, 444092597, Nabil Bilal Nabil Al-Aidi, male, <1 yr
+738, 444460950, Moaz Hani Muhammad Al-Aidi, male, 0
+739, 444095517, Qais Ali Nabil Al-Aidi, male, 0
+740, 444092597, Nabil Bilal Nabil Al-Aidi, male, 0
 741, 992926592, Souad Mohamed Mohamed Gouda, female, 64
 742, 939335360, Souad Muhammad Ali Hamdan, female, 60
 743, 930981477, Noha Othman Shaaban Gouda, female, 59
@@ -801,9 +798,9 @@ No., ID Number, Name, Sex, age
 797, 443206255, Souad Mohamed Mohamed Gouda, female, 3
 798, 442858700, Muhammad Abdullah Ibrahim Gouda, male, 3
 799, 445860489, Wadih Ahmed Wadih Hamdan, male, 1
-800, 444045629, Alma Moamen Muhammad Hamdan, female, <1 yr
-801, 444189732, Musk Muhammad Khalil Gouda, female, <1 yr
-802, 444462006, Bilal Muhammad Kamal Hamdan, male, <1 yr
+800, 444045629, Alma Moamen Muhammad Hamdan, female, 0
+801, 444189732, Musk Muhammad Khalil Gouda, female, 0
+802, 444462006, Bilal Muhammad Kamal Hamdan, male, 0
 803, 914650882, Farhana Musa Ibrahim Abu Naja, female, 78
 804, 920778255, Sami Suleiman Mahmoud Abu Naja, male, 62
 805, 901951723, Hoda Hussein Mahmoud Abu Naja, female, 60
@@ -1035,8 +1032,8 @@ No., ID Number, Name, Sex, age
 1031, 444417505, Hamsa Bilal Khalil Zoroub, female, 1
 1032, 442917654, Abdullah Ahmed Khalil Zorob, male, 1
 1033, 445671142, Heidi Mohamed Alaa El-Din Ahmed, female, 1
-1034, 444211577, Abdel Rahim Ahmed Abdel Rahim Awad, male, <1 yr
-1035, 444096747, Tahani Ezz El-Din Ahmed Zoroub, female, <1 yr
+1034, 444211577, Abdel Rahim Ahmed Abdel Rahim Awad, male, 0
+1035, 444096747, Tahani Ezz El-Din Ahmed Zoroub, female, 0
 1036, 967608225, Aisha Ramadan Muhammad Totah, female, 75
 1037, 928338540, Muhammad Matar Darwish Fares Atallah, male, 74
 1038, 926960543, Fouad Muhammad Abd Atallah, male, 72
@@ -1092,7 +1089,7 @@ No., ID Number, Name, Sex, age
 1088, 443074711, Riad Muhammad Riad Totah, male, 3
 1089, 443086905, Majd Muhammad Hamdan Totah, male, 3
 1090, 445787401, Sajid Ismail Hamdan Totah, male, 2
-1091, 444244917, Muhammad Nidal Hisham Atallah, male, <1 yr
+1091, 444244917, Muhammad Nidal Hisham Atallah, male, 0
 1092, 950040410, Muslim Mahmoud Ahmed Qudayh, male, 78
 1093, 937316172, Salah Ibrahim Muhammad Qudayh, male, 67
 1094, 975285461, Souad Salem Salman Qudaih, female, 64
@@ -1221,10 +1218,10 @@ No., ID Number, Name, Sex, age
 1217, 444434328, Sowar Ibrahim Abdel Raouf Al-Farra, female, 1
 1218, 445696545, Abdul Karim Abdullah Omar Shehab, male, 1
 1219, 444114979, Ezzat Asaad Ezzat Saq Allah, male, 1
-1220, 444167027, Mustafa Hani Essam Saqallah, male, <1 yr
-1221, 444265904, Abdel Raouf Ibrahim Abdel Raouf Al-Farra, male, <1 yr
-1222, 445914971, Muhammad Omar Mustafa Shehab, male, <1 yr
-1223, 444077838, Sarah Fathi Abdel Karim Al-Farra, female, <1 yr
+1220, 444167027, Mustafa Hani Essam Saqallah, male, 0
+1221, 444265904, Abdel Raouf Ibrahim Abdel Raouf Al-Farra, male, 0
+1222, 445914971, Muhammad Omar Mustafa Shehab, male, 0
+1223, 444077838, Sarah Fathi Abdel Karim Al-Farra, female, 0
 1224, 915846950, Etedal Ali Muhammad Al-Mutawq, female, 63
 1225, 900336694, Abdul Muti Youssef Al-Abd Al-Mutawaq, male, 49
 1226, 903611978, Amerah Muhammad Sabri Al-Mutawq, female, 44
@@ -1273,7 +1270,7 @@ No., ID Number, Name, Sex, age
 1269, 434764692, Nour Kamal Mansour Sobh, female, 9
 1270, 437415961, Jana Hamada Mansour Sobh, female, 7
 1271, 445018609, Abdul Aziz Kamal Mansour Sobh, male, 2
-1272, 445708753, Bilal Khaled Muhammad Sobh, male, <1 yr
+1272, 445708753, Bilal Khaled Muhammad Sobh, male, 0
 1273, 930950431, Mohieddin Abdel Rahman Mohieddin Sukayk, male, 78
 1274, 921165122, Intisar Mohammed Ahmed Muheisen, female, 75
 1275, 949861058, Hajer Muhammad Youssef Al-Ajrami, female, 72
@@ -1454,10 +1451,10 @@ No., ID Number, Name, Sex, age
 1450, 444272066, Jamil Ali Jamil Eid, male, 1
 1451, 444888234, Anas Abdullah Bahaa Al-Din Sukayk, male, 1
 1452, 445673312, Salma Muhammad Muhammad Ali, female, 1
-1453, 444728802, Obaida Bilal Youssef Abu Muailiq, male, <1 yr
-1454, 444494595, Louay Mahmoud Saleh Al-Ajrami, male, <1 yr
-1455, 444777833, Iyad Abdel Rahman Jihad Muheisen, male, <1 yr
-1456, 445383292, Anisa Mahmoud Ahmed Ali, female, <1 yr
+1453, 444728802, Obaida Bilal Youssef Abu Muailiq, male, 0
+1454, 444494595, Louay Mahmoud Saleh Al-Ajrami, male, 0
+1455, 444777833, Iyad Abdel Rahman Jihad Muheisen, male, 0
+1456, 445383292, Anisa Mahmoud Ahmed Ali, female, 0
 1457, 906150446, Robin Khaled Hassan Ashour, male, 75
 1458, 902712884, Etidal Mustafa Ali Abu Hayya, female, 60
 1459, 926952136, Nagah Muhammad Muhammad Ashour, female, 55
@@ -1501,7 +1498,7 @@ No., ID Number, Name, Sex, age
 1497, 442346912, Khalil Abdullah Abu Hayya responded, female, 3
 1498, 443057641, Abdel Hamid Mohamed Abdel Hamid Ashour, male, 3
 1499, 445608862, Abdullah Khalil Abdullah Abu Hayya, male, 2
-1500, 444370951, Hamza Muhammad Abdel Hamid Ashour, male, <1 yr
+1500, 444370951, Hamza Muhammad Abdel Hamid Ashour, male, 0
 1501, 962100624, Fatima Muhammad Ali Abu Omra, female, 91
 1502, 927520122, Sharha Salim Mahmoud Dalloul, female, 82
 1503, 921201331, Muhammad Hassan Ibrahim Abu Ayada, male, 80
@@ -1708,10 +1705,10 @@ No., ID Number, Name, Sex, age
 1704, 445034192, Yazan Ahmed Ibrahim Bardawil, male, 1
 1705, 444277008, Tariq Ziyad Humaidan Abu Omra, male, 1
 1706, 445411556, Mayar Musab Muhammad Daloul, female, 1
-1707, 444391494, Salma Ibrahim Basem Shaaban, female, <1 yr
-1708, 444468227, Muhammad Hussein Muhammad Abu Hamad, male, <1 yr
-1709, 444468235, Aseed Hussein Muhammad Abu Hamad, female, <1 yr
-1710, 444518211, Ahmed Moamen Ahmed Daloul, male, <1 yr
+1707, 444391494, Salma Ibrahim Basem Shaaban, female, 0
+1708, 444468227, Muhammad Hussein Muhammad Abu Hamad, male, 0
+1709, 444468235, Aseed Hussein Muhammad Abu Hamad, female, 0
+1710, 444518211, Ahmed Moamen Ahmed Daloul, male, 0
 1711, 911997716, Khalil Ahmed Mustafa Radwan, male, 84
 1712, 912565173, Farhana Farhat Shaker Yassin, female, 81
 1713, 931671192, Amer Hussein Ibrahim Radwan, male, 80
@@ -1908,10 +1905,10 @@ No., ID Number, Name, Sex, age
 1904, 444811798, Habiba Shehdeh Hassan Dhahir, female, 1
 1905, 445817455, Yaqut Anas Hassan Dhahir, female, 1
 1906, 444434070, Nevin Muhammad Yahya Al-Akkad, female, 1
-1907, 444044101, Muhammad Fadi Jihad Radwan, male, <1 yr
-1908, 444751739, Aseel Muhammad Jumah Dhair, female, <1 yr
-1909, 444650097, Muhammad Nour al-Din Yahya al-Akkad, male, <1 yr
-1910, 444254437, Muhammad Hamed Nidal Aliwa, male, <1 yr
+1907, 444044101, Muhammad Fadi Jihad Radwan, male, 0
+1908, 444751739, Aseel Muhammad Jumah Dhair, female, 0
+1909, 444650097, Muhammad Nour al-Din Yahya al-Akkad, male, 0
+1910, 444254437, Muhammad Hamed Nidal Aliwa, male, 0
 1911, 926355819, Abdul Rahman Suleiman Ahmed Al Mahlawi, male, 83
 1912, 411071426, Fathi Abdel Fattah Al-Hanafi Mukhaimer, male, 82
 1913, 911236537, Muhammad Eid Muhammad Al-Mahlawi, male, 74
@@ -2043,8 +2040,8 @@ No., ID Number, Name, Sex, age
 2039, 444926711, Lana Omar Kamel Gendayah, female, 2
 2040, 445745797, Hala Hossam Jamil Al-Zaanin, female, 1
 2041, 444308027, Muhammad Mansour Nasr al-Din Abu Nimah, male, 1
-2042, 444461867, Eliana Muhammad Nabil Mekheimer, female, <1 yr
-2043, 444048110, Abdel Rahman Samir Salama Saad, male, <1 yr
+2042, 444461867, Eliana Muhammad Nabil Mekheimer, female, 0
+2043, 444048110, Abdel Rahman Samir Salama Saad, male, 0
 2044, 912251022, Subhia Muhammad Hamed Al-Ramlawi, female, 86
 2045, 975331521, Farhana Khalil Salama Baraka, female, 81
 2046, 975331513, Jabr Muhammad Abdel Dayem Baraka, male, 75
@@ -2259,8 +2256,8 @@ No., ID Number, Name, Sex, age
 2255, 445242225, Daniel Abdullah Dunian Mansour, male, 1
 2256, 444819692, Rosa Khalil Ibrahim Khader, female, 1
 2257, 444479067, Yassin Adel Musa Zanoun, male, 1
-2258, 444297782, Omar Jihad Omar Al-Bahtini, male, <1 yr
-2259, 444658629, Watin Yahya Khaled Abu Hilal, female, <1 yr
+2258, 444297782, Omar Jihad Omar Al-Bahtini, male, 0
+2259, 444658629, Watin Yahya Khaled Abu Hilal, female, 0
 2260, 950948414, Omar Khalil Hussein Matar, male, 77
 2261, 940115694, Yousry Salman Salman Abu Daqqa, female, 76
 2262, 931060131, Amin Muhammad Abdel Fattah Matar, male, 75
@@ -2378,8 +2375,8 @@ No., ID Number, Name, Sex, age
 2374, 445778111, Adam Bakr Nasr Al-Sarhi, male, 1
 2375, 445875776, Kenan Saqr Nasr Al-Sarhi, male, 1
 2376, 445651789, Layan Mohamed Ismail Salah, female, 1
-2377, 445388879, Malak Abdul Salam Ali Abu Saif, female, <1 yr
-2378, 445904634, Hoda Mustafa Hatem Abu Seif, female, <1 yr
+2377, 445388879, Malak Abdul Salam Ali Abu Saif, female, 0
+2378, 445904634, Hoda Mustafa Hatem Abu Seif, female, 0
 2379, 907968143, Elaine Helmy Atallah Al-Qara, female, 80
 2380, 922871223, Fikreya Hassan Mesbah Abdel-Al, female, 76
 2381, 960217032, Reda Ibrahim Muhammad Saleha, female, 76
@@ -2488,10 +2485,10 @@ No., ID Number, Name, Sex, age
 2484, 445208473, Baraa Muhammad Adeeb Aslim, male, 2
 2485, 444383558, Moamen Essam Hussein Saleha, male, 1
 2486, 445805054, Amal Mahmoud Mohamed Saleha, female, 1
-2487, 445916448, Musk Abdul Hay Sami Al-Halabi, female, <1 yr
-2488, 444254551, Omar Ahmed Abdel Nasser Shamlakh, male, <1 yr
-2489, 444655393, Ibrahim Ammar Saad Al-Qara, male, <1 yr
-2490, 444397590, Osama Muhammad Adeeb Aslim, male, <1 yr
+2487, 445916448, Musk Abdul Hay Sami Al-Halabi, female, 0
+2488, 444254551, Omar Ahmed Abdel Nasser Shamlakh, male, 0
+2489, 444655393, Ibrahim Ammar Saad Al-Qara, male, 0
+2490, 444397590, Osama Muhammad Adeeb Aslim, male, 0
 2491, 914311022, Salima Muhammad Suleiman Sheikh Al-Eid, female, 81
 2492, 927852566, Kamal Ibrahim Muhammad Al-Ghandour, female, 71
 2493, 976140038, Rafifan Nouri Muhammad Tanboura, male, 71
@@ -2651,12 +2648,12 @@ No., ID Number, Name, Sex, age
 2647, 445476153, Ahmed Mustafa Ahmed Sheikh Al-Eid, male, 2
 2648, 445288988, Amani Omar Imad Al-Arair, female, 2
 2649, 445730872, Imad Iyad Imad Al-Arair, male, 1
-2650, 444168256, Ahmed Shadi Talal Al-Haddad, male, <1 yr
-2651, 445648769, Hoor Yassin Ahmed Sheikh Al-Eid, female, <1 yr
-2652, 444369789, Mahmoud Saeed Al-Haddad’s yarn, female, <1 yr
-2653, 444639603, Shaima Saeed Nabil Al-Laham, female, <1 yr
-2654, 444773444, Moaz Muhammad Jawad Al-Wadiya, male, <1 yr
-2655, 444169296, Tim Samer Suleiman Jaarour, male, <1 yr
+2650, 444168256, Ahmed Shadi Talal Al-Haddad, male, 0
+2651, 445648769, Hoor Yassin Ahmed Sheikh Al-Eid, female, 0
+2652, 444369789, Mahmoud Saeed Al-Haddad’s yarn, female, 0
+2653, 444639603, Shaima Saeed Nabil Al-Laham, female, 0
+2654, 444773444, Moaz Muhammad Jawad Al-Wadiya, male, 0
+2655, 444169296, Tim Samer Suleiman Jaarour, male, 0
 2656, 908677024, Nazmia Mahmoud Abdullah Al-Sharafi, female, 86
 2657, 913703922, Samiha Ali Abdel Rahman Al-Naqeeb, female, 78
 2658, 920883535, Salim Abdel Majeed Salim Al-Bahloul, male, 76
@@ -2919,10 +2916,10 @@ No., ID Number, Name, Sex, age
 2915, 443061700, Alyan Muhammad Alyan Al-Bayouk, male, 1
 2916, 444304281, Ghaith Khattab Omar Al-Bahloul, male, 1
 2917, 445866486, Hour Mustafa Muhammad Al-Naqib, female, 1
-2918, 444366991, Ayla Uday Abdel Jawad Abu Ras, female, <1 yr
-2919, 444216600, Amal Muhammad Ahmed Al-Bayouk, female, <1 yr
-2920, 444191613, Layan Muhammad Youssef Hussein, female, <1 yr
-2921, 444185136, Asaad Maher Abu Lashin's yarn, female, <1 yr
+2918, 444366991, Ayla Uday Abdel Jawad Abu Ras, female, 0
+2919, 444216600, Amal Muhammad Ahmed Al-Bayouk, female, 0
+2920, 444191613, Layan Muhammad Youssef Hussein, female, 0
+2921, 444185136, Asaad Maher Abu Lashin's yarn, female, 0
 2922, 410563365, Mazen Dhafer Khalil Shawa, male, 88
 2923, 918251125, Fatima Ahmed Muhammad Barhoum, female, 84
 2924, 906335922, Halima Salman Muhammad Baroud, female, 81
@@ -3117,7 +3114,7 @@ No., ID Number, Name, Sex, age
 3113, 445418478, Mira Youssef Ibrahim Musleh, female, 1
 3114, 445793870, Anas Muhammad Mahmoud Al-Derawi, male, 1
 3115, 445800691, Sowar Mounir Harb Dawas, female, 1
-3116, 444369920, Sham Muhammad Saleh Al-Sawalha, female, <1 yr
+3116, 444369920, Sham Muhammad Saleh Al-Sawalha, female, 0
 3117, 921167128, Mahdiya Abdullah Abdul Wahab Halawa, female, 93
 3118, 907645634, Hajjaj Musa Hajjaj Al-Zari'i, male, 84
 3119, 905951919, Saeed Ahmed Abdel Latif Labad, male, 83
@@ -3366,10 +3363,10 @@ No., ID Number, Name, Sex, age
 3362, 445839194, Amira Muhammad Samir Abu Ajwa, female, 1
 3363, 444301006, Malak Mahmoud Atef Halawa, female, 1
 3364, 445875610, Akram Muhammad Moin Al-Harkali, male, 1
-3365, 445342215, Muhammad Basil Mahmoud Al-Khayyat, male, <1 yr
-3366, 444370225, Adam Magdy Jaber Al-Dahdouh, male, <1 yr
-3367, 444799290, Adam Muhammad Samir Abu Ajwa, male, <1 yr
-3368, 444394423, Jalal Moin Al-Harkali diamond, female, <1 yr
+3365, 445342215, Muhammad Basil Mahmoud Al-Khayyat, male, 0
+3366, 444370225, Adam Magdy Jaber Al-Dahdouh, male, 0
+3367, 444799290, Adam Muhammad Samir Abu Ajwa, male, 0
+3368, 444394423, Jalal Moin Al-Harkali diamond, female, 0
 3369, 915995351, Khaled Salman Al-Ghazali responded, female, 90
 3370, 916240633, Muhammad Ali Darwish Abu Al-Omrain, male, 76
 3371, 801117243, Abdul Aziz Abdul Mohsen Abdul Rahim Tamraz, male, 75
@@ -3580,16 +3577,16 @@ No., ID Number, Name, Sex, age
 3576, 445815756, Fayrouz Fadi Hamada Abu Salima, female, 1
 3577, 444050710, Sanad Ahmed Mahmoud Abu Al-Omrain, male, 1
 3578, 444389373, Nourz Ahmed Shaaban Halasa, female, 1
-3579, 446099970, Khaled Fadi Khaled Al Baba, male, <1 yr
-3580, 446014441, Maha Fadi Khaled Al Baba, female, <1 yr
-3581, 445359581, Ayat Abdul Aziz Omar Farwaneh, female, <1 yr
-3582, 444270011, Firas Muhammad Abdel Aziz Tamraz, male, <1 yr
-3583, 445381890, Essam Mohammed Essam Farag, male, <1 yr
-3584, 444502959, Moatasem Billah Moaz Hammad Hammad, male, <1 yr
-3585, 445940414, Khaled Bilal Muhammad Abu Al-Amrain, male, <1 yr
-3586, 445950074, Sarah Abdel Rahman Mohamed Hammad, female, <1 yr
-3587, 445344443, Mahmoud Fadi Khaled Al-Baba, male, <1 yr
-3588, 445344450, Abdel Khaleq Fadi Khaled Al Baba, male, <1 yr
+3579, 446099970, Khaled Fadi Khaled Al Baba, male, 0
+3580, 446014441, Maha Fadi Khaled Al Baba, female, 0
+3581, 445359581, Ayat Abdul Aziz Omar Farwaneh, female, 0
+3582, 444270011, Firas Muhammad Abdel Aziz Tamraz, male, 0
+3583, 445381890, Essam Mohammed Essam Farag, male, 0
+3584, 444502959, Moatasem Billah Moaz Hammad Hammad, male, 0
+3585, 445940414, Khaled Bilal Muhammad Abu Al-Amrain, male, 0
+3586, 445950074, Sarah Abdel Rahman Mohamed Hammad, female, 0
+3587, 445344443, Mahmoud Fadi Khaled Al-Baba, male, 0
+3588, 445344450, Abdel Khaleq Fadi Khaled Al Baba, male, 0
 3589, 410111678, Subhi Jaafar Muhammad Abu Shaaban, male, 77
 3590, 906135736, Issam Jalal Muhammad Abu Shaaban, male, 77
 3591, 954860540, Saria Diab Ali Habib, female, 76
@@ -3835,11 +3832,11 @@ No., ID Number, Name, Sex, age
 3831, 444174445, Maria Ahmed Salah Kurdieh, female, 1
 3832, 445670995, Mohamed Hossam Mahmoud Hamad, male, 1
 3833, 445425424, Ahmed Thaer Sobhi Ghareeb, male, 1
-3834, 445895022, Raed Ihab Raed Salman Alai, male, <1 yr
-3835, 445239171, George Sobhi George Al-Souri, male, <1 yr
-3836, 444170781, Alia Abdel Nour Sami Al-Souri, female, <1 yr
-3837, 444288849, Ismail Ahmed Ismail Farhat, male, <1 yr
-3838, 445943327, Rose Abdul Aziz Muhammad Al-Ghoul, female, <1 yr
+3834, 445895022, Raed Ihab Raed Salman Alai, male, 0
+3835, 445239171, George Sobhi George Al-Souri, male, 0
+3836, 444170781, Alia Abdel Nour Sami Al-Souri, female, 0
+3837, 444288849, Ismail Ahmed Ismail Farhat, male, 0
+3838, 445943327, Rose Abdul Aziz Muhammad Al-Ghoul, female, 0
 3839, 917351884, Mansoura Ali Zayed Abu Halhoul, female, 80
 3840, 944937135, Janadi Ibrahim Ahmed Abu Shaar, female, 78
 3841, 922310123, Fatima Hamed Ahmed Kahil, female, 78
@@ -4131,12 +4128,12 @@ No., ID Number, Name, Sex, age
 4127, 445501604, Jude Alaa Muhammad Al-Hassi, male, 1
 4128, 445671233, Ayla Ahmed Ali Obaid, female, 1
 4129, 442813358, Ahmed Yasser Ahmed Abu Halhoul, male, 1
-4130, 445178346, Alyan Abdul Rahman Alyan Al-Ashqar, male, <1 yr
-4131, 445896616, Support Bilal Nabil Amara, male, <1 yr
-4132, 444635551, Rima Muhammad Sabry Al-Buraim, female, <1 yr
-4133, 444163539, Hassan Hamza Hassan Al-Amsi, male, <1 yr
-4134, 444187181, Anas Tariq Muhammad Al-Hasanat, male, <1 yr
-4135, 444728935, Zaid Khaled Juma Al-Bahbahani, male, <1 yr
+4130, 445178346, Alyan Abdul Rahman Alyan Al-Ashqar, male, 0
+4131, 445896616, Support Bilal Nabil Amara, male, 0
+4132, 444635551, Rima Muhammad Sabry Al-Buraim, female, 0
+4133, 444163539, Hassan Hamza Hassan Al-Amsi, male, 0
+4134, 444187181, Anas Tariq Muhammad Al-Hasanat, male, 0
+4135, 444728935, Zaid Khaled Juma Al-Bahbahani, male, 0
 4136, 961136314, Amer Salim Abdul Latif Al-Majaida, male, 86
 4137, 956243414, Mahmoud Muhammad Odeh Allah Sweilem, male, 83
 4138, 964326227, Youssef Faraj Abdel Mabhouh, male, 78
@@ -4354,13 +4351,13 @@ No., ID Number, Name, Sex, age
 4350, 445156631, Majd Ahmed Salem Al-Qanou, male, 1
 4351, 444208367, Abdul Karim Kamel Zidane Al-Hawajri, male, 1
 4352, 445866346, Mustafa Musa Azmi Al-Jamal, male, 1
-4353, 444626881, Muhammad Ahmed Salem Al-Qanou, male, <1 yr
-4354, 444367148, Sarah Mahmoud Fayez Ahl, female, <1 yr
-4355, 444047153, Muhammad Saleh Mahmoud Al-Dairi, male, <1 yr
-4356, 444773055, Muhammad Tamer Musleh Al-Qanou, male, <1 yr
-4357, 445702244, Celine Abdel Hadi Adel Daher, female, <1 yr
-4358, 444134944, Raghad Ahmed Odeh Abu Khattab, female, <1 yr
-4359, 444465603, Jannah Hisham Muhammad Hamouda, female, <1 yr
+4353, 444626881, Muhammad Ahmed Salem Al-Qanou, male, 0
+4354, 444367148, Sarah Mahmoud Fayez Ahl, female, 0
+4355, 444047153, Muhammad Saleh Mahmoud Al-Dairi, male, 0
+4356, 444773055, Muhammad Tamer Musleh Al-Qanou, male, 0
+4357, 445702244, Celine Abdel Hadi Adel Daher, female, 0
+4358, 444134944, Raghad Ahmed Odeh Abu Khattab, female, 0
+4359, 444465603, Jannah Hisham Muhammad Hamouda, female, 0
 4360, 975325416, Subha Suleiman Muhammad Abu Musa, female, 81
 4361, 915802938, Fatima Salem Hassan Ayyad, female, 81
 4362, 931086722, Salma Lutfi Hassan Al-Suwerki, female, 81
@@ -4629,11 +4626,11 @@ No., ID Number, Name, Sex, age
 4625, 445138142, Kenzi Fadi Salem Al Nabih, female, 1
 4626, 445803919, Saba Muhammad Imad Shalaq, female, 1
 4627, 444453120, Al-Baraa Muhammad Samir Abu Taima, male, 1
-4628, 445895287, Hour Muhammad Ibrahim Al-Mamlouk, female, <1 yr
-4629, 444370084, Aws Muhammad Hussein Al-Aleel, male, <1 yr
-4630, 445820830, Taqa Musa Khalil Abu Nuseira, female, <1 yr
-4631, 444747109, Hind Khaled Ahmed Jahjouh, female, <1 yr
-4632, 444131635, Hour Omar Mahmoud Al-Azaib, female, <1 yr
+4628, 445895287, Hour Muhammad Ibrahim Al-Mamlouk, female, 0
+4629, 444370084, Aws Muhammad Hussein Al-Aleel, male, 0
+4630, 445820830, Taqa Musa Khalil Abu Nuseira, female, 0
+4631, 444747109, Hind Khaled Ahmed Jahjouh, female, 0
+4632, 444131635, Hour Omar Mahmoud Al-Azaib, female, 0
 4633, 930025440, Nasri Salem Ahmed Al-Naouq, male, 75
 4634, 905833042, Mahmoud Rabhi Abdullah Al-Malh, male, 74
 4635, 930025457, Ali Salem Ahmed Al-Naouq, male, 72
@@ -4921,13 +4918,13 @@ No., ID Number, Name, Sex, age
 4917, 445736846, Abdullah Ibrahim Khaled Al-Dali, male, 1
 4918, 445876071, Lama Mahmoud Muhammad Muslim, female, 1
 4919, 445806482, Ahmed Muhammad Yasser Dardouna, male, 1
-4920, 445327893, Suzan Iyad Muhammad Al-Ashi, female, <1 yr
-4921, 444512107, Joan Ali Nasr Amer, female, <1 yr
-4922, 445386808, Basil Muhammad Hossam Abu Jasser, male, <1 yr
-4923, 444184147, Mahmoud Youssef Muhammad Abu Shawish, male, <1 yr
-4924, 444490551, Youmna Omar Riad Al-Rifi, female, <1 yr
-4925, 445333388, Raed Khaled Raed Rajab, male, <1 yr
-4926, 444118202, Abd al-Jawad Mizar Jamal Hoso, male, <1 yr
+4920, 445327893, Suzan Iyad Muhammad Al-Ashi, female, 0
+4921, 444512107, Joan Ali Nasr Amer, female, 0
+4922, 445386808, Basil Muhammad Hossam Abu Jasser, male, 0
+4923, 444184147, Mahmoud Youssef Muhammad Abu Shawish, male, 0
+4924, 444490551, Youmna Omar Riad Al-Rifi, female, 0
+4925, 445333388, Raed Khaled Raed Rajab, male, 0
+4926, 444118202, Abd al-Jawad Mizar Jamal Hoso, male, 0
 4927, 914317623, Ali Muhammad Ibrahim Jarghoun, female, 91
 4928, 930035233, Muhammad Arafat Abdullah Al-Tahla, male, 80
 4929, 921181442, Saeed Abdel Hafeez Nimr Zakul, male, 79
@@ -5306,8 +5303,8 @@ No., ID Number, Name, Sex, age
 5302, 445418833, Firas Adel Nabil Al-Qishawi, male, 1
 5303, 445764889, Dilla Jihad Hamada Al-Bakri, female, 1
 5304, 445738040, Uday Mahmoud Fouad Hana, male, 1
-5305, 444792931, Maria Khaled Zakaria Al-Shanti, female, <1 yr
-5306, 444132583, September Omar Kamel Abu Rahma, female, <1 yr
+5305, 444792931, Maria Khaled Zakaria Al-Shanti, female, 0
+5306, 444132583, September Omar Kamel Abu Rahma, female, 0
 5307, 938871712, Ramadan Abdel Rahim Rashid Maghari, male, 87
 5308, 902652213, Fakhrayah Muhammad Mahmoud Al-Zard, female, 86
 5309, 700493570, Mansoura Muhammad Ali Juha, female, 75
@@ -5649,13 +5646,13 @@ No., ID Number, Name, Sex, age
 5645, 445668569, Muhammad Mahmoud Dhifallah Al-Nadaiyat, male, 1
 5646, 445805781, Moaz Abdel Fattah Khaled Al-Zuhairi, male, 1
 5647, 444422067, Rima Hamed Kamal Abu Aoun, female, 1
-5648, 444234975, Salama Muhammad Marwan Abu Atiwi, male, <1 yr
-5649, 445897523, Celine Ihab Ayman Al-Bahtiti, female, <1 yr
-5650, 445357478, Sham Ahmed Fawzi Al-Qufaidi, female, <1 yr
-5651, 445647225, Fahd Uday Imad Al-Ajez, male, <1 yr
-5652, 446144404, Lana Youssef Emad Loulou, female, <1 yr
-5653, 445384241, Diaa Ahmed Abdel Ati Saleh Musa, male, <1 yr
-5654, 444349021, Jihad Muhammad Raafat Al-Dalis, male, <1 yr
+5648, 444234975, Salama Muhammad Marwan Abu Atiwi, male, 0
+5649, 445897523, Celine Ihab Ayman Al-Bahtiti, female, 0
+5650, 445357478, Sham Ahmed Fawzi Al-Qufaidi, female, 0
+5651, 445647225, Fahd Uday Imad Al-Ajez, male, 0
+5652, 446144404, Lana Youssef Emad Loulou, female, 0
+5653, 445384241, Diaa Ahmed Abdel Ati Saleh Musa, male, 0
+5654, 444349021, Jihad Muhammad Raafat Al-Dalis, male, 0
 5655, 906471313, Farouk Muhammad Bakir Annan, male, 87
 5656, 917738015, Salim Hassan Ali Dawoud, male, 86
 5657, 917435315, Hussein Muhammad Muhammad Abu Al-Aoun, male, 84
@@ -5982,10 +5979,10 @@ No., ID Number, Name, Sex, age
 5978, 445153679, Hamza Alaa Ibrahim Abu Zuhair, male, 1
 5979, 445792229, Nima Abdullah Castro Abu Ashayba, female, 1
 5980, 445151525, Musk Ali Hassan Al-Rantisi, female, 1
-5981, 444657233, Rafif Mahmoud Aref Al-Faqawi, female, <1 yr
-5982, 444190722, Youssef Haitham Youssef Abu Mahdi, male, <1 yr
-5983, 444391163, Manal Moamen Majed Abu Al-Awf, female, <1 yr
-5984, 444370142, Joel Atallah Ibrahim Al-Amsh, female, <1 yr
+5981, 444657233, Rafif Mahmoud Aref Al-Faqawi, female, 0
+5982, 444190722, Youssef Haitham Youssef Abu Mahdi, male, 0
+5983, 444391163, Manal Moamen Majed Abu Al-Awf, female, 0
+5984, 444370142, Joel Atallah Ibrahim Al-Amsh, female, 0
 5985, 975562018, Hamad Ziyadah Ismail Abu Khatla, male, 90
 5986, 901980227, Halima Hussein Hassan Abu Tabak, female, 81
 5987, 920229226, Subhia Muhammad Khalil Abu Fakhr, female, 80
@@ -6315,13 +6312,13 @@ No., ID Number, Name, Sex, age
 6311, 445671076, Adam Ezzat Muhammad Warsh Agha, male, 1
 6312, 445689490, Salah al-Din Osama Khalil Abu Laila, male, 1
 6313, 445521263, Taqa Salem Muhammad Abu Maarouf, female, 1
-6314, 448008359, Layan Rami Anwar Faisal, female, <1 yr
-6315, 444483317, Watin Ahmed Khaled Al-Saidi, female, <1 yr
-6316, 444694962, Tasnim Ramzi Odeh Qaraman, female, <1 yr
-6317, 445919194, Malik Muhammad Shafiq Abu Al-Kass, male, <1 yr
-6318, 444046783, And Tin Sharif Bakr Al-Batniji, female, <1 yr
-6319, 444751275, Badr Yasser Rafiq Abu Habib, male, <1 yr
-6320, 444793533, Sama Ibrahim Majid Al-Wadiya, female, <1 yr
+6314, 448008359, Layan Rami Anwar Faisal, female, 0
+6315, 444483317, Watin Ahmed Khaled Al-Saidi, female, 0
+6316, 444694962, Tasnim Ramzi Odeh Qaraman, female, 0
+6317, 445919194, Malik Muhammad Shafiq Abu Al-Kass, male, 0
+6318, 444046783, And Tin Sharif Bakr Al-Batniji, female, 0
+6319, 444751275, Badr Yasser Rafiq Abu Habib, male, 0
+6320, 444793533, Sama Ibrahim Majid Al-Wadiya, female, 0
 6321, 804654437, Youssef Abdel Qader Mustafa Shaqila, male, 1823
 6322, 911370120, Turkish Muhammad Hussein Abdel Bari, female, 91
 6323, 920861028, Yousra Hosni Abdullah Abu Marq, female, 84
@@ -6743,9 +6740,9 @@ No., ID Number, Name, Sex, age
 6739, 444082416, Maria Ahmed Ali Bustan, female, 1
 6740, 442817060, Abdel Rahman Iyad Abdel Rahman Abu Jalal, male, 1
 6741, 445544232, Muhammad Omar Salem Al-Shawi, male, 1
-6742, 444183859, Tulin Muhammad Tawfiq Al-Taaban, female, <1 yr
-6743, 444166854, Zeina Ahmed Mohamed Shatat, female, <1 yr
-6744, 444655245, Ratel Yasser Jumaa Abu Al-Fitah, female, <1 yr
-6745, 445921091, Hala Yasser Hamed Al-Sanwar, female, <1 yr
-6746, 444133656, Sowar Khaled Saber Abu Qashlan, female, <1 yr
-6747, 444499768, Saba Ahmed Ali Al-Qazzaz, female, <1 yr`
+6742, 444183859, Tulin Muhammad Tawfiq Al-Taaban, female, 0
+6743, 444166854, Zeina Ahmed Mohamed Shatat, female, 0
+6744, 444655245, Ratel Yasser Jumaa Abu Al-Fitah, female, 0
+6745, 445921091, Hala Yasser Hamed Al-Sanwar, female, 0
+6746, 444133656, Sowar Khaled Saber Abu Qashlan, female, 0
+6747, 444499768, Saba Ahmed Ali Al-Qazzaz, female, 0`
