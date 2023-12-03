@@ -10,4 +10,5 @@ module.exports = {
   trailingComma: "es5",
   useTabs: false,
   endOfLine: "lf",
+  tailwindConfig: './tailwind.config.js'
 };

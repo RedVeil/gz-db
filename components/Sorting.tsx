@@ -46,6 +46,7 @@ export default function Sorting({ sortingItems }: SortingProps): JSX.Element {
           < div ref={dropdownRef} className="hidden md:block absolute w-[180px] p-[10px] border border-[#626263] top-16 bg-[#141416] rounded-lg right-0">
             {sortingItems.map(item => (
               <button
+                key={`${item.label}-desktop`}
                 className={`py-2 w-full cursor-pointer text-primary rounded-lg hover:bg-[#23262F] transition ease-in-out duration-250  
                   ${item.active ? 'bg-[#353945]' : 'bg-[#141416]'}`}
                 onClick={() => handleClick(item.onClick)}
@@ -62,6 +63,7 @@ export default function Sorting({ sortingItems }: SortingProps): JSX.Element {
                 <div className="space-y-4 w-full">
                   {sortingItems.map(item => (
                     <button
+                      key={`${item.label}-mobile`}
                       className={`py-2 w-full cursor-pointer text-primary rounded-lg hover:bg-[#23262F] transition ease-in-out duration-250  
                   ${item.active ? 'bg-[#353945]' : 'bg-[#141416]'}`}
                       onClick={() => handleClick(item.onClick)}

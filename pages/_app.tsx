@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
-import "@/styles/global.css";
+import "@/styles/globals.css";
+import 'leaflet/dist/leaflet.css'
 
 const { title, description, socialShareImage } = {
   title: "GZ-DB",
@@ -20,7 +21,8 @@ export default function MyApp(props: any) {
     <React.Fragment>
       <Head>
         <title>{title}</title>
-        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content={description} />
 
         {/*  Facebook Meta Tags */}
