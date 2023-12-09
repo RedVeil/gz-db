@@ -3,10 +3,11 @@ import { FieldSetItem } from "@/lib/types"
 interface FieldSetProps {
   fieldSetItem: FieldSetItem;
   setValue: Function;
+  value: string | number;
   className?: string;
 }
 
-export default function FieldSet({ fieldSetItem, setValue, className = "" }: FieldSetProps): JSX.Element {
+export default function FieldSet({ fieldSetItem, setValue, value, className = "" }: FieldSetProps): JSX.Element {
   return (
     <fieldset className={`${className} flex flex-col mt-4`}>
       <div>
@@ -20,7 +21,7 @@ export default function FieldSet({ fieldSetItem, setValue, className = "" }: Fie
           <input
             className="w-9/12 pl-2 pb-1 focus:outline-none border-0 leading-none bg-transparent"
             type="text"
-            value={fieldSetItem.value}
+            value={String(value)}
             onChange={(e) => setValue(e.target.value, fieldSetItem.key)}
           />
         </div>

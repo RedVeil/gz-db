@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import "@/styles/globals.css";
 import 'leaflet/dist/leaflet.css'
+import { Toaster } from "react-hot-toast";
 
 const { title, description, socialShareImage } = {
   title: "GZ-DB",
@@ -42,6 +43,7 @@ export default function MyApp(props: any) {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
+      <Toaster />
       {getLayout(<Component {...pageProps} />)}
     </React.Fragment>
   );
