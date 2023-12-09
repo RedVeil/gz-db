@@ -4,9 +4,10 @@ interface PersonCellProps {
   person: Person;
   searchTerm: string;
   showProposeChangesModal: (person: Person) => void
+  showReportPersonModal: (person: Person) => void
 }
 
-export default function PersonCell({ person, searchTerm, showProposeChangesModal }: PersonCellProps): JSX.Element {
+export default function PersonCell({ person, searchTerm, showProposeChangesModal, showReportPersonModal }: PersonCellProps): JSX.Element {
   if (searchTerm !== "" &&
     !person.first_name.toLowerCase().includes(searchTerm)
   ) return <></>
@@ -30,6 +31,11 @@ export default function PersonCell({ person, searchTerm, showProposeChangesModal
             Edit
           </a>
         </td>
+        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => showReportPersonModal(person)}>
+            Report
+          </a>
+        </td>
       </tr >
       {/* MOBILE */}
       <tr className="md:hidden">
@@ -44,6 +50,9 @@ export default function PersonCell({ person, searchTerm, showProposeChangesModal
           <p className="text-sm text-gray-500">{person?.location_of_death}</p>
           <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => showProposeChangesModal(person)}>
             Edit
+          </a>
+          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => showReportPersonModal(person)}>
+            Report
           </a>
         </td>
       </tr >

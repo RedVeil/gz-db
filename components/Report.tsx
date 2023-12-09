@@ -6,73 +6,21 @@ import { SupabaseClient } from "@supabase/supabase-js";
 import toast from "react-hot-toast";
 import { v4 as uuidv4 } from 'uuid';
 
-const FIELD_SET_ITEMS: FieldSetItem[] = [
-  {
-    key: "first_name",
-    label: "First Name",
-  },
-  {
-    key: "last_name",
-    label: "Last Name",
-  },
-  {
-    key: "sex",
-    label: "Sex",
-  },
-  {
-    key: "age",
-    label: "Age",
-  },
-  {
-    key: "birth_day",
-    label: "Birthday",
-    description: "DD/MM/YYYY",
-  },
-  {
-    key: "date_of_death",
-    label: "Deathday",
-    description: "DD/MM/YYYY",
-  },
-  {
-    key: "home",
-    label: "Home",
-  },
-  {
-    key: "location_of_death",
-    label: "Location of Death",
-  },
-]
-
-
-interface AddPersonProps {
+interface ReportProps {
   visible: boolean;
   onClosePopUpModal: () => void;
   supabase: SupabaseClient;
-  tableName: "proposed_changes" | "proposed_people"
-  person: Person
+  tableName: "reports" | "people_reports"
+  targetId?: string
 }
 
-export default function AddPerson({ visible, onClosePopUpModal, supabase, tableName, person }: AddPersonProps): JSX.Element {
-  const [proposedPerson, setProposedPerson] = useState<Person>(person)
+export default function Report({ visible, onClosePopUpModal, supabase, tableName, targetId }: ReportProps): JSX.Element {
+  const [value, setValue] = useState<string>("abc")
 
-  useEffect(() => setProposedPerson(person), [person])
+  async function sendReport() {
+    const data = { id: uuidv4(), report: value }
 
-  function handleChange(value: string, key: string) {
-    console.log(key, value)
-    const newData = { ...proposedPerson };
-
-    // @ts-ignore @dev the target per definition will be found and cant be undefined
-    newData[key] = value
-
-    setProposedPerson(newData)
-  }
-
-  async function proposePerson() {
-    const data = { ...proposedPerson }
-
-    if (tableName === "proposed_changes") data.target_id = data.id;
-
-    data.id = uuidv4()
+    if (tableName === "people_reports") data.target_id = targetId;
 
     const res = await supabase
       .from(tableName)
@@ -89,21 +37,28 @@ export default function AddPerson({ visible, onClosePopUpModal, supabase, tableN
   return (
     <MobileModal visible={visible} onClosePopUpModal={onClosePopUpModal}>
       <div className="flex flex-wrap gap-x-4">
-        {FIELD_SET_ITEMS.map(item => (
-          <FieldSet
-            key={item.key}
-            fieldSetItem={item}
-            // @ts-ignore
-            value={proposedPerson[item.key]}
-            setValue={handleChange}
-          />
-        ))}
+        <fieldset className={`flex flex-col mt-4`}>
+          <div>
+            <div className={`flex justify-between`}>
+              <h2 className="text-gray-800 text-[18px]">{tableName === "reports" ? "Report & Feedback" : "Report"}</h2>
+            </div>
+          </div>
+          <div className={`flex flex-col mt-4`}>
+            <div className="">
+              <textarea
+                className=""
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+              />
+            </div>
+          </div>
+        </fieldset>
       </div>
       <div className="flex flex-row items-center space-x-4">
         <button
           type="button"
           className="mt-4 rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-gray-500"
-          onClick={() => proposePerson()}
+          onClick={() => sendReport()}
         >
           Submit
         </button>

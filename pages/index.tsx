@@ -7,6 +7,7 @@ import MobileModal from "@/components/modal/MobileModal";
 import AddPerson from "@/components/AddPerson";
 import { createClient } from "@supabase/supabase-js";
 import NoSSR from "react-no-ssr";
+import Report from "@/components/Report";
 
 const SORTING_ITEMS: SortingItem[] = [
   {
@@ -50,29 +51,50 @@ export default function Index(): JSX.Element {
     setSearchTerm(value.toLowerCase());
   }
 
-  const [show, setShow] = useState<boolean>(false)
-  const [modalData, setModalData] = useState<Person>(EMPTY_PERSON)
-  const [tableName, setTableName] = useState<"proposed_changes" | "proposed_people">("proposed_people")
+  const [showProposeModal, setShowProposeModal] = useState<boolean>(false)
+  const [proposeModalData, setProposeModalData] = useState<Person>(EMPTY_PERSON)
+  const [proposeModalTableName, setProposeModalTableName] = useState<"proposed_changes" | "proposed_people">("proposed_people")
 
-  function closeModal() {
-    setShow(false)
+  function closeProposeModal() {
+    setShowProposeModal(false)
   }
 
   function showProposePersonModal() {
-    setModalData(EMPTY_PERSON);
-    setTableName("proposed_people")
-    setShow(true)
+    setProposeModalData(EMPTY_PERSON);
+    setProposeModalTableName("proposed_people")
+    setShowProposeModal(true)
   }
 
   function showProposeChangesModal(person: Person) {
-    setModalData(person);
-    setTableName("proposed_changes")
-    setShow(true)
+    setProposeModalData(person);
+    setProposeModalTableName("proposed_changes")
+    setShowProposeModal(true)
+  }
+
+  const [showReportModal, setShowReportModal] = useState<boolean>(false)
+  const [reportModalData, setReportModalData] = useState<string | undefined>(undefined)
+  const [reportModalTableName, setReportModalTableName] = useState<"reports" | "people_reports">("reports")
+
+  function closeReportModal() {
+    setShowReportModal(false)
+  }
+
+  function showReportAndFeedbackModal() {
+    setReportModalData(undefined);
+    setReportModalTableName("reports")
+    setShowReportModal(true)
+  }
+
+  function showReportPersonModal(person: Person) {
+    setReportModalData(person.id);
+    setReportModalTableName("people_reports")
+    setShowReportModal(true)
   }
 
   return (
     <>
-      <AddPerson visible={show} onClosePopUpModal={closeModal} supabase={supabase} person={modalData} tableName={tableName} />
+      <AddPerson visible={showProposeModal} onClosePopUpModal={closeProposeModal} supabase={supabase} person={proposeModalData} tableName={proposeModalTableName} />
+      <Report visible={showReportModal} onClosePopUpModal={closeReportModal} supabase={supabase} targetId={reportModalData} tableName={reportModalTableName} />
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-center">
           <div className="sm:flex-auto">
@@ -88,13 +110,22 @@ export default function Index(): JSX.Element {
             <SearchBar handleSearch={handleSearch} />
             {/* <Sorting sortingItems={SORTING_ITEMS} /> */}
           </span>
-          <button
-            type="button"
-            className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-gray-500"
-            onClick={() => showProposePersonModal()}
-          >
-            Add Person
-          </button>
+          <span className="flex flex-row items-center space-x-4">
+            <button
+              type="button"
+              className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-gray-500"
+              onClick={() => showProposePersonModal()}
+            >
+              Add Person
+            </button>
+            <button
+              type="button"
+              className="block rounded-md bg-yellow-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600 disabled:bg-gray-500"
+              onClick={() => showReportAndFeedbackModal()}
+            >
+              Report & Feedback
+            </button>
+          </span>
         </div>
 
         <div className="mt-8 flow-root">
@@ -131,10 +162,13 @@ export default function Index(): JSX.Element {
                     <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-0">
                       <span className="sr-only">Edit</span>
                     </th>
+                    <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-0">
+                      <span className="sr-only">Report</span>
+                    </th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} />)}
+                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} showReportPersonModal={showReportPersonModal} />)}
                 </tbody>
               </table>
             </div>
@@ -152,7 +186,7 @@ export default function Index(): JSX.Element {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} />)}
+                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} showReportPersonModal={showReportPersonModal} />)}
                 </tbody>
               </table>
             </div>
