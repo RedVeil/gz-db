@@ -20,12 +20,24 @@ const SORTING_ITEMS: SortingItem[] = [
 const supabase = createClient('https://jqamrmyapfbelhmkcpvg.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpxYW1ybXlhcGZiZWxobWtjcHZnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDE2MDQyOTgsImV4cCI6MjAxNzE4MDI5OH0.nusNDsT1mIZF1r5rFnjc6C_VlsCgbKtdSMOGD_MVgQU')
 
 async function getPeople() {
-  let res = await supabase
+  const people = []
+  const countRes = await supabase
     .from('people')
-    .select('*')
-    .range(0, 9)
+    .select('*', { count: 'exact', head: true })
+  const count = countRes.count || 0
 
-  if (!res.error) return res.data
+  let i = 0;
+  while (i < count) {
+    let res = await supabase
+      .from('people')
+      .select('*')
+      .range(i, i + 999)
+    people.push(...res.data)
+
+    i += 1000
+  }
+
+  return people
 }
 
 const EMPTY_PERSON = {
@@ -38,6 +50,7 @@ const EMPTY_PERSON = {
   date_of_death: 0,
   home: "",
   location_of_death: "",
+  last_change: 0
 }
 
 export default function Index(): JSX.Element {
@@ -93,12 +106,24 @@ export default function Index(): JSX.Element {
 
   return (
     <>
-      <AddPerson visible={showProposeModal} onClosePopUpModal={closeProposeModal} supabase={supabase} person={proposeModalData} tableName={proposeModalTableName} />
-      <Report visible={showReportModal} onClosePopUpModal={closeReportModal} supabase={supabase} targetId={reportModalData} tableName={reportModalTableName} />
+      <AddPerson
+        visible={showProposeModal}
+        onClosePopUpModal={closeProposeModal}
+        supabase={supabase}
+        tableName={proposeModalTableName}
+        person={proposeModalData}
+      />
+      <Report
+        visible={showReportModal}
+        onClosePopUpModal={closeReportModal}
+        supabase={supabase}
+        tableName={reportModalTableName}
+        targetId={reportModalData}
+      />
       <div className="px-4 sm:px-6 lg:px-8">
         <div className="sm:flex sm:items-center">
           <div className="sm:flex-auto">
-            <h1 className="text-base font-semibold leading-6 text-gray-900">Title</h1>
+            <h1 className="text-base font-semibold leading-6 text-gray-900">People</h1>
             <p className="mt-2 text-sm text-gray-700">
               Subtitle
             </p>
@@ -168,7 +193,15 @@ export default function Index(): JSX.Element {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} showReportPersonModal={showReportPersonModal} />)}
+                  {people.length > 0 && people.map((person) =>
+                    <PersonCell
+                      key={person.id}
+                      person={person}
+                      searchTerm={searchTerm}
+                      mainAction={{ label: "Edit", handleAction: showProposeChangesModal }}
+                      secondaryAction={{ label: "Edit", handleAction: showReportPersonModal }}
+                    />
+                  )}
                 </tbody>
               </table>
             </div>
@@ -186,7 +219,15 @@ export default function Index(): JSX.Element {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  {people.length > 0 && people.map((person) => <PersonCell key={person.id} person={person} searchTerm={searchTerm} showProposeChangesModal={showProposeChangesModal} showReportPersonModal={showReportPersonModal} />)}
+                  {people.length > 0 && people.map((person) =>
+                    <PersonCell
+                      key={person.id}
+                      person={person}
+                      searchTerm={searchTerm}
+                      mainAction={{ label: "Edit", handleAction: showProposeChangesModal }}
+                      secondaryAction={{ label: "Edit", handleAction: showReportPersonModal }}
+                    />
+                  )}
                 </tbody>
               </table>
             </div>

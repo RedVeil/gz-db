@@ -1,13 +1,18 @@
 import { Person } from "@/lib/types"
 
+type PersonAction = {
+  label: string;
+  handleAction: (person: Person) => void;
+}
+
 interface PersonCellProps {
   person: Person;
   searchTerm: string;
-  showProposeChangesModal: (person: Person) => void
-  showReportPersonModal: (person: Person) => void
+  mainAction: PersonAction;
+  secondaryAction: PersonAction;
 }
 
-export default function PersonCell({ person, searchTerm, showProposeChangesModal, showReportPersonModal }: PersonCellProps): JSX.Element {
+export default function PersonCell({ person, searchTerm, mainAction, secondaryAction }: PersonCellProps): JSX.Element {
   if (searchTerm !== "" &&
     !person.first_name.toLowerCase().includes(searchTerm)
   ) return <></>
@@ -27,13 +32,13 @@ export default function PersonCell({ person, searchTerm, showProposeChangesModal
         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.home}</td>
         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.location_of_death}</td>
         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => showProposeChangesModal(person)}>
-            Edit
+          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => mainAction.handleAction(person)}>
+            {mainAction.label}
           </a>
         </td>
         <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => showReportPersonModal(person)}>
-            Report
+          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => secondaryAction.handleAction(person)}>
+            {secondaryAction.label}
           </a>
         </td>
       </tr >
@@ -48,11 +53,11 @@ export default function PersonCell({ person, searchTerm, showProposeChangesModal
           <p className="text-sm text-gray-500">{person?.date_of_death > 0 ? person?.date_of_death : ""}</p>
           <p className="text-sm text-gray-500">{person?.home}</p>
           <p className="text-sm text-gray-500">{person?.location_of_death}</p>
-          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => showProposeChangesModal(person)}>
-            Edit
+          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => mainAction.handleAction(person)}>
+            {mainAction.label}
           </a>
-          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => showReportPersonModal(person)}>
-            Report
+          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => secondaryAction.handleAction(person)}>
+            {secondaryAction.label}
           </a>
         </td>
       </tr >

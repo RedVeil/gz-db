@@ -8,6 +8,7 @@ export type Person = {
   date_of_death: number;
   home?: string;
   location_of_death?: string;
+  last_change?: number;
   files?: any;
 }
 
