@@ -1,4 +1,7 @@
+import { OTHER_LABEL } from "@/lib/localization";
+import { localizationAtom } from "@/lib/localization/state";
 import { MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useAtom } from "jotai";
 import { useState } from "react";
 
 interface SearchBarProps {
@@ -6,6 +9,7 @@ interface SearchBarProps {
 }
 
 export default function SearchBar({ handleSearch }: SearchBarProps): JSX.Element {
+  const [localization] = useAtom(localizationAtom);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   function handleReset() {
@@ -19,7 +23,7 @@ export default function SearchBar({ handleSearch }: SearchBarProps): JSX.Element
       <input
         className="w-9/12 pl-2 pb-1 focus:outline-none border-0 leading-none bg-transparent"
         type="text"
-        placeholder="Search..."
+        placeholder={OTHER_LABEL.search[localization]}
         onChange={(e) => setSearchTerm(e.target.value)}
         value={searchTerm}
       />

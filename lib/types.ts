@@ -1,19 +1,23 @@
 export type Person = {
   id: string;
-  first_name: string;
-  last_name?: string;
-  sex?: string;
-  age?: number;
-  birth_day: number;
-  date_of_death: number;
-  home?: string;
-  location_of_death?: string;
-  last_change?: number;
-  files?: any;
+  name: string;
+  sex: string;
+  age: string;
+  target_id?: string;
+}
+
+export type LocalizedTerm = {
+  eng: string;
+  arabic: string;
 }
 
 export type FieldSetItem = {
   key: string;
   label: string;
   description?: string;
+}
+
+export type Index = {
+  start: number;
+  end: number;
 }

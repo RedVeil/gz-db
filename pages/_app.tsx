@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import "@/styles/globals.css";
-import 'leaflet/dist/leaflet.css'
 import { Toaster } from "react-hot-toast";
 
 const { title, description, socialShareImage } = {

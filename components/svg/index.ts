@@ -1,4 +1,6 @@
 import SwitchIcon from "@/components/svg/SwitchIcon";
+import FemaleIcon from "@/components/svg/FemaleIcon";
+import MaleIcon from "@/components/svg/MaleIcon";
 
 export interface IconProps {
   color: string;
@@ -8,5 +10,7 @@ export interface IconProps {
 }
 
 export default {
-  SwitchIcon
+  SwitchIcon,
+  FemaleIcon,
+  MaleIcon
 }

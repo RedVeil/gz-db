@@ -1,64 +1,57 @@
 import { Person } from "@/lib/types"
+import MaleIcon from "./svg/MaleIcon";
+import FemaleIcon from "./svg/FemaleIcon";
 
-type PersonAction = {
+type ButtonProps = {
   label: string;
   handleAction: (person: Person) => void;
+  className?: string;
 }
 
 interface PersonCellProps {
   person: Person;
-  searchTerm: string;
-  mainAction: PersonAction;
-  secondaryAction: PersonAction;
+  buttons?: ButtonProps[];
 }
 
-export default function PersonCell({ person, searchTerm, mainAction, secondaryAction }: PersonCellProps): JSX.Element {
-  if (searchTerm !== "" &&
-    !person.first_name.toLowerCase().includes(searchTerm)
-  ) return <></>
-
+export default function PersonCell({ person, buttons }: PersonCellProps): JSX.Element {
   return (
     <>
       {/* DESKTOP */}
       <tr className="hidden md:table-row">
         <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
-          {person.first_name}
+          {person.name}
         </td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.last_name}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.sex}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.age}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.birth_day > 0 ? person?.birth_day : ""}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.date_of_death > 0 ? person?.date_of_death : ""}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.home}</td>
-        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person?.location_of_death}</td>
-        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => mainAction.handleAction(person)}>
-            {mainAction.label}
-          </a>
+        <td className="whitespace-nowrap px-3 py-4 text-sm">
+          {person.sex === "male" ?
+            <MaleIcon size="18" color="#6b7280" /> :
+            <FemaleIcon size="18" color="#6b7280" />
+          }
         </td>
-        <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => secondaryAction.handleAction(person)}>
-            {secondaryAction.label}
-          </a>
-        </td>
+        <td className="whitespace-nowrap px-3 py-4 text-sm font-medium text-gray-500">{person.age}</td>
+        {buttons && buttons?.length > 0 && buttons?.map(button =>
+          <td key={button.label} className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
+            <a className={`${button.className}`} onClick={() => button.handleAction(person)}>
+              {button.label}
+            </a>
+          </td>
+        )}
       </tr >
       {/* MOBILE */}
-      <tr className="md:hidden">
+      < tr className="md:hidden" >
         <td className="md:hidden whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0">
-          <p className="text-sm text-gray-900">{person.first_name}</p>
-          <p className="text-sm text-gray-500">{person?.last_name}</p>
-          <p className="text-sm text-gray-500">{person?.sex}</p>
-          <p className="text-sm text-gray-500">{person?.age}</p>
-          <p className="text-sm text-gray-500">{person?.birth_day > 0 ? person?.birth_day : ""}</p>
-          <p className="text-sm text-gray-500">{person?.date_of_death > 0 ? person?.date_of_death : ""}</p>
-          <p className="text-sm text-gray-500">{person?.home}</p>
-          <p className="text-sm text-gray-500">{person?.location_of_death}</p>
-          <a className="text-indigo-600 hover:text-indigo-900 cursor-pointer" onClick={() => mainAction.handleAction(person)}>
-            {mainAction.label}
-          </a>
-          <a className="text-red-600 hover:text-red-900 cursor-pointer" onClick={() => secondaryAction.handleAction(person)}>
-            {secondaryAction.label}
-          </a>
+          <p className="text-sm text-gray-900">{person.name}</p>
+          <span className="text-sm text-gray-500">
+            {person.sex === "male" ?
+              <MaleIcon size="18" color="#6b7280" /> :
+              <FemaleIcon size="18" color="#6b7280" />
+            }
+          </span>
+          <p className="text-sm font-medium text-gray-500">{person.age}</p>
+          {buttons && buttons?.length > 0 && buttons?.map(button =>
+            <a key={button.label} className={`${button.className}`} onClick={() => button.handleAction(person)}>
+              {button.label}
+            </a>
+          )}
         </td>
       </tr >
     </>
