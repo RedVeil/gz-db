@@ -8,10 +8,14 @@ import AddPerson from "@/components/AddPerson";
 import { createClient } from "@supabase/supabase-js";
 import NoSSR from "react-no-ssr";
 import Report from "@/components/Report";
-import { BUTTON_LABEL, PAGE_SUBTITLE, PAGE_TITLE, TABLE_TITLE } from "@/lib/localization";
+import { BUTTON_LABEL, OTHER_LABEL, PAGE_SUBTITLE, PAGE_TITLE, TABLE_TITLE } from "@/lib/localization";
 import { localizationAtom } from "@/lib/localization/state";
 import { useAtom } from "jotai";
 import Navbar from "@/components/Navbar";
+
+const data = `id,name,sex,age
+a19e2fe0-da0b-46ed-8c15-0482de665114,Nahed Thabet Salman Al-Rafati,male,62
+341f33bf-dee5-4cb5-bb0e-cde79e67995b,Youssef Mohamed Ahmed Jado,male,60`
 
 const SORTING_ITEMS: SortingItem[] = [
   {
@@ -123,22 +127,31 @@ export default function Index(): JSX.Element {
       <div className="px-4 sm:px-6 lg:px-8 pb-12">
         <div className="sm:flex sm:items-center">
           <div className="sm:flex-auto">
-            <h1 className="text-2xl font-semibold leading-6 text-gray-900">{PAGE_TITLE.people[localization]}</h1>
-            <p className="mt-2 text-sm text-gray-700">
+            <p className="mt-4 text-lg text-gray-800 xl:w-1/2">
               {PAGE_SUBTITLE.people[localization]}
+            </p>
+            <p className="mt-4 text-sm text-gray-600 xl:w-1/2">
+              {OTHER_LABEL.methodology[localization]}
             </p>
           </div>
         </div>
 
-        <div className="md:flex md:flex-row md:items-center md:justify-between mt-4">
+        <div className="md:flex md:flex-row md:items-start md:justify-between mt-8">
           <div>
             <SearchBar handleSearch={handleSearch} />
             {/* <Sorting sortingItems={SORTING_ITEMS} /> */}
+            <a
+              href={'data:text/csv;charset=UTF-8,' + encodeURIComponent(people.map(p => `${p.name},${p.sex},${p.age}`).join('\n'))}
+              download={"people.csv"}
+              className="text-blue-500"
+            >
+              {OTHER_LABEL.download[localization]}
+            </a>
           </div>
-          <div className="flex flex-row items-center space-x-4 mt-4 md:mt-0">
+          <div className="flex flex-row items-start space-x-4 mt-4 md:mt-0">
             <button
               type="button"
-              className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-gray-500"
+              className="block rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 disabled:bg-gray-500"
               onClick={() => showProposePersonModal()}
             >
               {BUTTON_LABEL.addPerson[localization]}
@@ -211,7 +224,7 @@ export default function Index(): JSX.Element {
         <div className="w-full flex flex-row items-center justify-center mt-4">
           <button
             type="button"
-            className="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:bg-gray-500"
+            className="block rounded-md bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-600 disabled:bg-gray-500"
             onClick={() => addPeople(people)}
           >
             {BUTTON_LABEL.pagination[localization]}

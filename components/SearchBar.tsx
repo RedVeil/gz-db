@@ -32,7 +32,7 @@ export default function SearchBar({ handleSearch }: SearchBarProps): JSX.Element
           <XMarkIcon className="w-7 h-7" />
         )}
       </div>
-      <div className="w-2/12 h-full bg-blue-600 rounded-r-md flex justify-center cursor-pointer" onClick={() => handleSearch(searchTerm)}>
+      <div className="w-2/12 h-full bg-green-600 rounded-r-md flex justify-center cursor-pointer" onClick={() => handleSearch(searchTerm)}>
         <MagnifyingGlassIcon className="w-7 h-7 mt-1.5 mr-1 text-white group-hover/search:text-gray-200" />
       </div>
     </div>
